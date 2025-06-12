@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* 影音專區 */
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-gallery figure {
+  width: 100%;
+  max-width: 1200px; /* ✅ 限制最大寬度 */
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 保持 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+
+/* Lightbox 基本樣式 */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+/* 開啟時顯示並置中內容 */
+.lightbox.show {
+  display: flex;
+}
+
+/* 影片內容樣式 */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+/* 關閉按鈕 */
+.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+figure {
+  text-align: center;
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>醫美診所資料</title>
+  <link rel="stylesheet" href="beauty-style.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- 導覽列 -->
+<header class="site-header">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="img/logo1-1.png" alt="Ryckie Logo" height="40">
+    </a>
+
+    <nav class="main-nav" id="nav-menu">
+      <a href="./index.html" class="nav-link">HOME</a>
+      <a href="./about me.html" class="nav-link">ABOUT</a>
+      <a href="https://www.behance.net/feacae64" class="nav-link" target="_blank">WORKS</a>
+      <a href="./contact me.html" class="nav-link">CONTACT ME</a>
+    </nav>
+  </div>
+</header>
+
+    <!-- 主圖 Banner -->
+  <div class="responsive-banner">
+  <img src="img/beauty/Brown and White Simple Skincare Logo.png" alt="Banner Image" />
+  </div>
+  <BR>
+
+<body>
+<!-- YT專區 -->
+<div class="video-gallery">
+  <figure>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/rR0RDWLb0OY?si=TONgm9v84_er1QHp"></iframe>
+    </div>
+    <figcaption>K2淨血機介紹</figcaption>
+  </figure>
+</div>
+
+<div class="video-gallery">
+  <figure>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/hX03UdFv0Es?si=v8nsXkyNnuOrD1ji"></iframe>
+    </div>
+    <figcaption>K2血液療程大哉問!</figcaption>
+  </figure>
+</div>
+
+<div class="video-gallery">
+  <figure>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/6bWiv4BRJbo?si=fodJtUnBoGkK4AIg"></iframe>
+    </div>
+    <figcaption>38婦女節小動畫</figcaption>
+  </figure>
+</div>
+
+<div class="video-gallery">
+  <figure>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/5VArwgrlw_M?si=C9BYJP6Nh4545PGp"></iframe>
+    </div>
+    <figcaption>除毛小動畫</figcaption>
+  </figure>
+</div>
+
+
+<!-- reels -->
+<div class="gallery">
+
+  <figure>
+    <img src="img/beauty/ig限動/k2淨血/布拉格/96050.jpg" 
+         alt="圖1" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/k2淨血/布拉格/k2淨血 (1).mp4" />
+    <figcaption>K2淨血</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/prp生髮/prp.png" 
+         alt="圖2" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/prp生髮/prp生髮 (1).mp4" />
+    <figcaption>PRP生髮</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/埋線/3.png" 
+         alt="圖3" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/埋線/埋線 (1).mp4" />
+    <figcaption>魚骨埋線</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/抽脂手術/4.png" 
+         alt="圖4" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/抽脂手術/抽脂手術 2.mp4" />
+    <figcaption>威塑抽脂</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/豐臀手術/5.png" 
+         alt="圖5" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/豐臀手術/豐臀手術 (1).mp4" />
+    <figcaption>自體豐臀</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/水飛梭/6.png" 
+         alt="圖6" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/水飛梭/水飛梭 (1).mp4" />
+    <figcaption>黃金水飛梭</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/鼻子玻尿酸/7.png" 
+         alt="圖7" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/鼻子玻尿酸/鼻子玻尿酸 (2).mp4" />
+    <figcaption>鼻子玻尿酸</figcaption>
+  </figure>
+
+  <figure>
+    <img src="img/beauty/ig限動/臉部拉提/8.png" 
+         alt="圖8" 
+         class="gallery-img" 
+         data-video="img/beauty/ig限動/臉部拉提/臉部拉提 (1).mp4" />
+    <figcaption>微創拉提</figcaption>
+  </figure>
+
+</div>
+
+
+<!-- Lightbox 單一視窗 -->
+<div class="lightbox" id="lightbox">
+  <span class="close" id="lightbox-close">&times;</span>
+  <video id="lightbox-video" class="lightbox-content" autoplay muted loop controls>
+    <source id="lightbox-source" src="" type="video/mp4" />
+  </video>
+</div>
+
+
+<!-- 彈出放大圖 -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" />
+</div>
+
+<script src="beauty-script.js"></script>
+
+<!-- 頁尾 -->
+<footer class="site-footer">
+    <div class="footer-keywords">
+  <a href="index.html"><span>網站設計</span></a> |
+  <a href="index.html"><span>個人網站</span></a> |
+  <a href="index.html"><span>網頁設計師</span></a>
+    </div>
+
+ <div class="footer-container">
+      <p>© 2025 Ryckie Wong. All rights reserved.</p>
+    </div>
+  </footer>
+
+<!-- 側邊社群與置頂按鈕 -->
+<div class="floating-icons">
+  <a href="https://github.com/14172" target="_blank"><img src="/img/github.png" alt="github" /></a>
+  <a href="https://www.instagram.com/ryc._.kie/" target="_blank"><img src="img/IG.png" alt="IG" /></a>
+  <a href="https://www.youtube.com/@ryckie.1001" target="_blank"><img src="img/youtube.png" alt="YouTube" /></a>
+  <a href="tel:0938682085"> <img src="img/phone-call.png" alt="phone"></a>
+  <a href="#" class="back-to-top"><img src="img/arrow_10125511.png" alt="Back to Top" /></a>
+</div>
+
+</body>
+</html>
